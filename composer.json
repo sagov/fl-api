@@ -1,12 +1,27 @@
 {
-  "name": "flframework/fl-api",
-  "description": "Faberlic FL Api",
-  "type": "metapackage",  
-  "require": {
-    "php": ">=5.6",    
-    "nmred/kafka-php": "0.2.*",
-    "zendframework/zend-json": "^3.0",
-    "zendframework/zend-json-server": "^3.0",
-    "zendframework/zend-soap": "^2.6"
-  }
+    "name": "flframework/fl-api",
+    "description": "",   
+    "require": {
+        "php": "^5.6 || ^7.0",    
+		"nmred/kafka-php": "0.2.*",
+		"zendframework/zend-json": "^3.0",
+		"zendframework/zend-json-server": "^3.0",
+		"zendframework/zend-soap": "^2.6"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.7.25 || ^6.4.4",
+        "zendframework/zend-coding-standard": "~1.0.0"
+    },
+    
+    "autoload": {
+        "psr-4": {
+            "FL\\Api\\": "src/"
+        }
+    },
+    
+    "config": {
+        "sort-packages": true
+    }
+    
+    
 }

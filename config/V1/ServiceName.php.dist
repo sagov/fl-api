@@ -1,0 +1,11 @@
+<?php
+
+return [
+    'description' => '',
+    'acl' => [
+        'permission' => '',
+    ],
+    'methods' => [
+        '{MethodName}' => include __DIR__.'/{ServiceName}.{MethodName}.php',
+    ],
+];

@@ -1,0 +1,19 @@
+<?php
+
+return [
+    'version' => 'V1',
+    'name' => '',
+    'descshort' => '',
+    'description' => '',
+    'icon' => '',
+    'acl' => [
+        'permission' => '',
+    ],
+    'src' => [
+        {ModuleClass}::class => include __DIR__.'/V1/{ServiceName}.php',
+    ],
+    'servers' => [
+            'jsonrpc'
+    ],
+
+];

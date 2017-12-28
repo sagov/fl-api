@@ -1,0 +1,39 @@
+<?php
+
+return [
+    'acl' => [
+        'permission'=>'',
+    ],
+    'description' => '',
+    'params' => [
+        'first' => [
+            'description' => '',
+            'type' => \FL\Api\Response\Type::STRING,
+            'validator' => [
+                \Zend\Validator\StringLength::class => [
+                    'name' => \Zend\Validator\StringLength::class,
+                    'options' => [
+                        'min' => 1,
+                        'max' => 3,
+                    ],
+                ],
+            ]
+        ],
+        'second' => [
+            'description' => '',
+            'type' => \FL\Api\Response\Type::STRING,
+            'allowNull' => false
+        ],
+
+    ],
+    'return' => \FL\Api\Response\Type::COLLECTION,
+    'fields' => [
+        'name' => [
+            'type' => \FL\Api\Response\Type::STRING
+        ],
+        'value' => [
+            'type' => \FL\Api\Response\Type::STRING
+        ],
+    ],
+    'phpunit' => false,
+];

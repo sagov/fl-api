@@ -1,0 +1,17 @@
+{
+  "name": "flframework/fl-api",
+  "description": "Faberlic FL Api",
+  "type": "metapackage",
+  "homepage": "https://packagist.faberlic.com",
+  "require": {
+    "php": ">=5.6",
+    "flframework/fl-config": "^1.0",
+    "flframework/fl-log": "^1.0",
+    "flframework/fl-user": "^1.0",
+    "flframework/fl-cache": "^1.0",
+    "nmred/kafka-php": "0.2.*",
+    "zendframework/zend-json": "^3.0",
+    "zendframework/zend-json-server": "^3.0",
+    "zendframework/zend-soap": "^2.6"
+  }
+}
